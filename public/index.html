@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Arrastrar y Soltar</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <div id="balloonsContainer"></div>
+    <div class="container">
+        <div class="options">
+            <div id="timer" class="timer">Tiempo: 0 segundos</div>
+            <div class="option" id="option1" draggable="true" data-target="point1">Conducto Principal</div>
+            <div class="option" id="option2" draggable="true" data-target="point2">Conducto Lateral</div>
+            <div class="option" id="option3" draggable="true" data-target="point3">Conducto Recurrente</div>
+            <div class="option" id="option4" draggable="true" data-target="point4">Conductos Sencundarios</div>
+            <div class="option" id="option5" draggable="true" data-target="point5">Conductos Accesorios</div>
+            <div class="option" id="option6" draggable="true" data-target="point6">Interconducto</div>
+            <div class="option" id="option7" draggable="true" data-target="point7">Deltas Apicales</div>
+            <div class="option" id="option8" draggable="true" data-target="point8">Colateral</div>
+        </div>
+        <div class="image-container">
+            <img src="static/img/conductos.jpeg" alt="Juego de puntos">
+            <div class="point" id="point1" style="top: 222px; left: 390px;"></div>
+            <div class="point" id="point2" style="top: 160px; left: 335px;"></div>
+            <div class="point" id="point3" style="top: 275px; left: 330px;"></div>
+            <div class="point" id="point4" style="top: 410px; left: 335px;"></div>
+            <div class="point" id="point5" style="top: 470px; left: 330px;"></div>
+            <div class="point" id="point6" style="top: 340px; left: 420px;"></div>
+            <div class="point" id="point7" style="top: 550px; left: 410px;"></div>
+            <div class="point" id="point8" style="top: 260px; left: 450px;"></div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="static/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

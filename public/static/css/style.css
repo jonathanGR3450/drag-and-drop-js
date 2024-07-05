@@ -1,0 +1,63 @@
+.container {
+    display: flex;
+}
+.options {
+    width: 290px;
+    margin-right: 20px;
+    border: 5px solid #080808;
+}
+.option {
+    padding: 10px;
+    margin: 5px;
+    background-color: rgba(173, 216, 230, 0.295);
+    cursor: pointer;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Oculta el texto que exceda el ancho del elemento */
+    text-overflow: ellipsis; /* Añade puntos suspensivos si el texto es demasiado largo */
+}
+
+.timer {
+    padding: 10px;
+    margin: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Oculta el texto que exceda el ancho del elemento */
+    text-overflow: ellipsis; /* Añade puntos suspensivos si el texto es demasiado largo */
+}
+.image-container {
+    position: relative;
+}
+.image-container img {
+    max-width: 800px;
+    max-height: 800px;
+}
+.point {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: red;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.option.correct {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+#balloonsContainer {
+    /* position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; */
+}
+
+.balloon {
+    position: absolute;
+    width: 70px;
+    height: 90px;
+    border-radius: 50% 50% 50% 50% / 70% 70% 30% 30%;
+    opacity: 0;
+}
